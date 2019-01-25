@@ -1,0 +1,267 @@
+
+// VARIABLES ---------------------------------------------------------
+$white: #EEEFF0; // Fake white
+$pinkone: #F1CBC8; // Alternative body BG color
+$pinktwo: #EAC7D1; // Actual Body BG color
+$pinkthree: #E3D9ED; // Alternative Body BG color
+$pinkfour: #665A70; // Hover color
+$font: 'Quicksand', sans-serif;
+$helvetica: helvetica, arial;
+
+// CODE --------------------------------------------------------------
+
+body {
+  background-color: $pinktwo;
+  overflow-x: hidden;
+}
+
+#container {
+  width: 65%;
+  margin: auto;
+}
+
+hr {
+  border-top: solid 2px $white;
+}
+
+p {
+  font-family: $helvetica;
+  color: $pinkfour;
+}
+
+.company {
+  display: flex;
+
+  img {
+    width: 40%;
+    height: 40%;
+    margin-left: 50px;
+  }
+
+  h3 {
+    text-align: left;
+    font-weight: 700;
+    margin-left: 50px;
+  }
+}
+
+.companyborder,
+.serviceborder,
+.contactborder {
+  border: solid 3px $white;
+  margin-bottom: 50px;
+}
+
+.company_content {
+  width: 88%;
+  margin: auto;
+  padding-top: 50px;
+}
+
+.service {
+  display: flex;
+
+  img {
+    width: 40%;
+    height: 40%;
+    margin-right: 50px;
+  }
+
+  h3 {
+    text-align: right;
+    font-weight: 700;
+    margin-right: 50px;
+  }
+}
+
+
+.service_list {
+  ul {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+    li {
+      display: inline-block;
+      font-family: $font;
+      font-size: 1.2em;
+      a {
+        color: $pinkfour;
+        padding: 20px 100px 20px 100px;
+        border-radius: 40px;
+        font-weight: 700;
+        &:hover {
+          text-decoration: none;
+          background-color: $white;
+          transition-timing-function: ease-in;
+          transition: 0.6s;
+        }
+      }
+    }
+  }
+}
+
+.service_list_two {
+  img {
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+  }
+  ul {
+    list-style-type: disc;
+    text-align: left;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 30px;
+    li {
+      a {
+        color: $white;
+        &:hover {
+          color: $pinkfour;
+        }
+      }
+    }
+  }
+}
+
+h1 {
+    font-size: 2.5em;
+    font-family: $font;
+    font-weight: 400;
+    color: $white;
+    text-align: center;
+    margin: 20px 0px 0px 0px;
+    padding: 50px;
+  }
+
+  .vid  {
+    iframe {
+      display: block;
+      margin: auto;
+      width: 65%;
+      padding: 30px 0px 50px 0px;
+      height: 510px;
+    }
+  }
+
+h2 {
+    font-size: 2em;
+    font-family: $font;
+    font-weight: 400;
+    color: $white;
+    text-align: center;
+    margin: 0px;
+    padding: 30px 0px 50px 0px;
+  }
+
+h3 {
+    font-size: 1.3em;
+    font-family: $font;
+    font-weight: 400;
+    color: $white;
+    text-align: center;
+    margin: 0px;
+    padding: 50px;
+  }
+
+
+.company {
+  .company_content {
+    width: 80%;
+  }
+  .company_img {
+    img {
+        display: block;
+        margin: auto;
+        width: 80%;
+    }
+  }
+}
+
+ul {
+  color: $pinkfour;
+  list-style: none;
+  text-align: center;
+  padding: 0px;
+}
+
+.company_list {
+  padding-bottom:  30px;
+}
+
+
+
+.contactcenter {
+
+  p {
+    text-align: center;
+  }
+  i {
+    color: $pinkfour;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 10px;
+    display: block;
+  }
+
+  iframe {
+    display: block;
+    margin: auto;
+  }
+
+  a {
+    display: block;
+    margin: 20px 0px 20px 0px;
+    text-align: center;
+    color: $pinkfour;
+    padding: 20px 50px 20px 50px;
+    border-radius: 40px;
+    font-weight: 700;
+    &:hover {
+      text-decoration: none;
+      background-color: $white;
+      transition-timing-function: ease-in;
+      transition: 0.6s;
+    }
+  }
+
+}
+
+header {
+  .banner {
+    width: 100%;
+    height: 494px;;
+    opacity: 0.8;
+    border-top: solid 2px $white;
+    border-bottom: solid 2px $white;
+  }
+
+  .logo {
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+  }
+
+
+  ul {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 0px;
+    li {
+      display: inline-block;
+      font-family: $font;
+      font-size: 1.2em;
+      a {
+        color: $pinkfour;
+        padding: 20px 120px 20px 120px;
+        border-radius: 40px;
+        &:hover {
+          text-decoration: none;
+          color: $pinkfour;
+          background-color: $white;
+          transition-timing-function: ease-in;
+          transition: 0.6s;
+        }
+      }
+    }
+  }
+}
