@@ -101,12 +101,11 @@ h1 {
   margin: 20px 0px 0px 0px;
   padding: 50px; }
 
-.vid iframe {
+.vid video {
   display: block;
   margin: auto;
   width: 65%;
-  padding: 30px 0px 50px 0px;
-  height: 510px; }
+  padding: 30px 0px 50px 0px; }
 
 h2 {
   font-size: 2em;
